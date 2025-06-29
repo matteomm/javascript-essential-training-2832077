@@ -21,4 +21,22 @@ const backpack = {
   },
 };
 
+const fork = {
+  width: 10,
+  material: 'wood',
+  sturdy: false,
+  increaseLength: function (newwidth) {
+    this.width = newwidth + this.width 
+  }
+}
+console.log('before_function', fork.width)
+fork.increaseLength(20)
+
 console.log("The backpack object:", backpack);
+console.log("The backpack object:", backpack.pocketNum);
+
+console.log("I am working on something new")
+console.log(fork.material)
+
+console.log('after_function', fork.width)
+
